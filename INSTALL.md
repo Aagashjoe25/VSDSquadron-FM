@@ -99,6 +99,11 @@ sudo cmake --install build
 
 ### Option 2: Automated Script (The Easy Way)
 
+If you prefer a hands-off approach, this single script performs all the manual steps above automatically.
+
+1.  Save the script below as `install_fpga_tools.sh`.
+2.  Make it executable with the command: `chmod +x install_fpga_tools.sh`
+3.  Run it from your terminal with: `./install_fpga_tools.sh`
 <details>
 <summary><strong>➡️ Click here to view the all-in-one installation script</strong></summary>
 
