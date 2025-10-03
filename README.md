@@ -24,7 +24,7 @@ Each project has its own folder with the source code, simulation files, and a de
 
 | Project Number | Title                                   | Status      | Link                                                            |
 | :------------- | :-------------------------------------- | :---------- | :-------------------------------------------------------------- |
-| 01             | **Led_blue** | `Complete`  | [➡️ Go to Project](./task-01-led_blue/)        |
+| 01             | **Led_blue** | `Complete`  | [➡️ Go to Project](./blue_led/)        |
 | ...            | ...                                     | ...         | ...                                                             |
 
 ---
