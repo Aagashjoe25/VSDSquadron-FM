@@ -166,33 +166,27 @@ Open a new terminal and run these:
 ```bash
 yosys --version
 ```
-
-✅ Expect: `Yosys 0.38...`
+Expect: `Yosys 0.38...`
 
 #### **Check nextpnr**
 
 ```bash
 nextpnr-ice40 --version
 ```
-
-✅ Expect: `nextpnr-ice40 v0.6...`
+Expect: `nextpnr-ice40 v0.6...`
 
 #### **Check icepack**
 
 ```bash
 icepack --help
 ```
-
-✅ Should show usage/help.
+Should show usage/help.
 
 #### **Check iceprog**
 
 ```bash
 iceprog --help
 ```
-
-✅ Should show usage/help.
-
-If all four commands run without errors → 🎉 Your toolchain is ready!
+Should show usage/help.
 
 ---

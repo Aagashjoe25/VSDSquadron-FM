@@ -1,0 +1,5 @@
+set_io led_red 39
+set_io led_blue 40
+set_io led_green 41
+set_io clk_12Mhz 20
+set_io blink_enable 3
