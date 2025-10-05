@@ -54,6 +54,5 @@ Thus these intermediate files produced during project shouldnt be uploaded in gi
 
 ## 4. Project Demo Video
 
-The blue_led blinkable project demo video on VSDSquadron FPGA mini.
-
-[![Project Demo Video]()
+Click the thumbnail below to watch the blue_led blinkable project working on the FPGA board:
+[![Project Demo Video](https://img.youtube.com/vi/CM47eBt_PD8/0.jpg)](https://www.youtube.com/watch?v=CM47eBt_PD8 "Project Demo Video")
