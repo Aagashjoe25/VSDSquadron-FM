@@ -1,4 +1,4 @@
-# Task 01: blue_led
+# Task 01: led_blue
 
 ## 1. Verilog code functionality
 
