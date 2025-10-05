@@ -32,6 +32,8 @@
 ---
 
 ## 3. Challenges Faced and Solutions Implemented
+### blink_enable and groung connection
+When the wire is connected to ground, as expected the blinking is disabled but when i remove the wire it blinks eventhough i enabled blink when the wire is connected to supply, i understood that when the io pin is in open impedance(floating) there is a weak pull up internal resistor which causes the power supply and gives a high signal to blink_anble wire,thus used it to avoid extra power suplly wire to be taken from 3v3 pin in fpga board
 
 ### Toolchain Setup
 The first challenge was the tools setup in Ubuntu, which took me 2 days. I researched building the tools from their open-source GitHub repositories to ensure I was using updated, less buggy versions. I created detailed documentation for installing the toolchain on Ubuntu 22.04.
@@ -39,7 +41,11 @@ The first challenge was the tools setup in Ubuntu, which took me 2 days. I resea
 ### Makefile & Board Programming
 * I made changes to the `Makefile`. I removed the `terminal` and `cycle` commands as my project is simple and doesn't require Git updates or embedded communication.
 * To flash the bitstream, `make flash` didn't work initially. I found out that I needed `sudo` access for the tool to access the USB port.
-* I added a new Makefile command, `clean`, which uses `iceprog -e` to erase the FPGA's memory. This is useful because the board runs the previously programmed design on startup. I also enabled `sudo` for this command.
+* I added a new Makefile command, `clean`, which uses `iceprog -e` to erase the FPGA's memory. This is useful because the board runs the previously programmed design on startup. I also enabled 
+
+
+
+`sudo` for this command.
 
 ### FPGA Workflow
 * I now understand the use of a `.gitignore` file for version control.
@@ -54,5 +60,7 @@ Thus these intermediate files produced during project shouldnt be uploaded in gi
 
 ## 4. Project Demo Video
 
-Click the thumbnail below to watch the blue_led blinkable project working on the FPGA board:
-[![Project Demo Video](https://img.youtube.com/vi/CM47eBt_PD8/0.jpg)](https://www.youtube.com/watch?v=CM47eBt_PD8 "Project Demo Video")
+Watch the project demo video here:
+
+https://github.com/user-attachments/assets/290c23e5-0fca-4357-93c9-af9839186d23
+
