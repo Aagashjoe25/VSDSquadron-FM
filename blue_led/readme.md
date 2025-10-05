@@ -32,7 +32,7 @@
 ---
 
 ## 3. Challenges Faced and Solutions Implemented
-### blink_enable and groung connection
+### Blink_enable and ground connection
 When the wire is connected to ground, as expected the blinking is disabled but when i remove the wire it blinks eventhough i enabled blink when the wire is connected to supply, i understood that when the io pin is in open impedance(floating) there is a weak pull up internal resistor which causes the power supply and gives a high signal to blink_anble wire,thus used it to avoid extra power suplly wire to be taken from 3v3 pin in fpga board
 
 ### Toolchain Setup
