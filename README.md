@@ -1,12 +1,8 @@
-# VSDSquadron FPGA Projects Hub
-
-Welcome to my FPGA projects repository! This space serves as central hub for all tasks I complete using the open-source EDA tools.
-
----
+# VSDSquadron FPGA mini internship
 
 ## 🚀 Getting Started
 
-New to this repository? Follow these two simple steps to get set up and running.
+This repository contains the projects i worked on VSDSquadron FPGA mini internship
 
 ### Step 1: Install the Toolchain
 First, you need to set up the required open-source FPGA tools (**Yosys, iCEstorm, nextpnr**). A complete, step-by-step guide for Ubuntu 22.04 is provided.
@@ -20,7 +16,7 @@ Once your toolchain is ready, you can dive into the projects! The navigator belo
 
 ## 📂 Projects Navigator
 
-Each project has its own folder with the source code, simulation files, and a dedicated guide.
+Each project has its own folder with the source code, Makefile, pcf  and readme files.
 
 | Project Number | Title                                   | Status      | Link                                                            |
 | :------------- | :-------------------------------------- | :---------- | :-------------------------------------------------------------- |
