@@ -33,7 +33,7 @@
 
 ## 3. Challenges Faced and Solutions Implemented
 ### Blink_enable and ground connection
-When the wire is connected to ground, as expected the blinking is disabled but when i remove the wire it blinks eventhough i enabled blink when the wire is connected to supply, i understood that when the io pin is in open impedance(floating) there is a weak pull up internal resistor which causes the power supply and gives a high signal to blink_anble wire,thus used it to avoid extra power suplly wire to be taken from 3v3 pin in fpga board
+When the wire is connected to ground, as expected the blinking is disabled but when i remove the wire it blinks eventhough i enabled blink when the wire is connected to supply, i understood that when the io pin is in open impedance(floating) there is a weak pull up internal resistor which causes the power supply and gives a high signal to blink_enble wire,thus used it to avoid extra power suplly wire to be taken from 3v3 pin in fpga board
 
 ### Toolchain Setup
 The first challenge was the tools setup in Ubuntu, which took me 2 days. I researched building the tools from their open-source GitHub repositories to ensure I was using updated, less buggy versions. I created detailed documentation for installing the toolchain on Ubuntu 22.04.
