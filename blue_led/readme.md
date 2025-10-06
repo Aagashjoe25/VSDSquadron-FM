@@ -15,6 +15,7 @@
 ### Code Modifications
 * I got the idea of using the clock divider and `test_wire` to control the blue LED by passing it as the PWM signal to the `SB_RGBA_DRV` primitive.
 * Modified the clock divider to make a 1Hz clock to see the blinking and used the `test_wire` as `blink_enable`.
+* *Used the external hardware clk from pin 20 directly instead of using the SB_HFOSC primitive which used the internal oscillator.
 * Thus, I connected the `blink_enable` wire to I/O pin 3 and added logic in the program such that if `blink_enable` is high, it should make the `blue_led` blink.
 
 ---
@@ -42,9 +43,6 @@ The first challenge was the tools setup in Ubuntu, which took me 2 days. I resea
 * I made changes to the `Makefile`. I removed the `terminal` and `cycle` commands as my project is simple and doesn't require Git updates or embedded communication.
 * To flash the bitstream, `make flash` didn't work initially. I found out that I needed `sudo` access for the tool to access the USB port.
 * I added a new Makefile command, `clean`, which uses `iceprog -e` to erase the FPGA's memory. This is useful because the board runs the previously programmed design on startup. I also enabled 
-
-
-
 `sudo` for this command.
 
 ### FPGA Workflow
