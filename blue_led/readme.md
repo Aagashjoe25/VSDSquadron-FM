@@ -26,7 +26,7 @@
 | `led_red`         | **39** |
 | `led_blue`        | **40** |
 | `led_green`       | **41** |
-| `clk_12Mhz`       | **20** |
+| `clk_20Mhz`       | **20** |
 | `blink_enable`    | **3** |
 
 ---
