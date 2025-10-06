@@ -3,14 +3,14 @@ module top(
 	output wire led_green,
 	output wire led_blue,
 	input wire blink_enable,
-	input wire clk_12Mhz
+	input wire clk_20Mhz
 );
 	// clock divider circuit to generate 1hz from 12Mhz
 	reg [23:0] counter=0;
 	reg clk_1hz=0;
 
-	always @(posedge clk_12Mhz) begin
-		if(counter==5999999) begin
+	always @(posedge clk_20Mhz) begin
+		if(counter==9999999) begin
 			counter<=0;
 			clk_1hz<= ~clk_1hz;
 		end
